@@ -15,7 +15,7 @@
 </head>
 <body>
 <!--nav-->
-    <nav class="nav-fill text-primary nav-tabs">
+    <nav class="nav-fill text-primary nav-tabs sticky-top bg-dark-subtle">
         <ul class="nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page"><i class="fa-solid fa-house"></i> Home</a>
@@ -34,20 +34,38 @@
     
 <!--extra btn info-->
 <div class="container pt-2">
-    <div class="btn-group container">
-      <a href="#" class="btn-outline-success btn">
-        <i class="fa-solid fa-paw"></i> About Us</a>
-      <a href="#" class="btn-outline-warning btn">
+    <div class="card-title h1 pb-3 text-primary text-center">
+    Jolly House Minders
+  </div>
+    <div class="btn-group container w-auto start-50 translate-middle-x">
+      <a href="#collapse-bio-1" 
+      class="btn-outline-light btn"
+      data-bs-toggle="collapse">
+        <i class="text-success fa-solid fa-paw"></i> About Us</a>
+      <a href="#collapse-bio-2" 
+      class="btn-outline-light btn"
+      data-bs-toggle="collapse">
         <i class="text-warning fa-solid fa-bone"></i> Pets</a>
-      <a href="#" class="btn-outline-primary btn">
+      <a href="#" class="btn-outline-light btn">
         <i class="text-primary fa-brands fa-facebook-f"></i> Facebook Page</a>
     </div>
 </div>
-<!--Start of first card-->
-<div class="card border-bottom-0 p-2 m-2 start-50 translate-middle-x" style="width: 20rem;">
-  <div class="card-title h1 text-primary text-center">
-    Jolly House Minders
+<!--all hidden cards for main page-->
+<div class="card collapse py-2 translate-middle-x start-50 bottom-50 w-50" id="collapse-bio-1">
+  <div class="card-body text-info">
+<!--hidden text for about us-->
+     Allow us to introduce ourselves, my name is Erica and my partner is Jolly Joe. We are currently located in Northern California but are more than willing to travel. In between dog walks/cat cuddles, Joe fills his days studying computer programming in order to pursue a career in the technology field and Erica works from home as an Independent Contractor for a virtual contact temp agency. 
   </div>
+</div>
+<div class="card collapse py-2 translate-middle-x start-50 bottom-50 w-50" id="collapse-bio-2">
+  <div class="card-body text-info">
+<!--hidden text for about us-->
+    Pets
+  </div>
+</div>
+
+<!--start of first card-->
+<div class="card border-bottom-0 p-2 m-2 start-50 translate-middle-x" style="width: 20rem;">
   <div class="card border-info-subtle border-bottom-0">
     <div class="card-text p-3 bg-gradient">
       <div class="card pt-0 p-2 border-bottom-0">
@@ -56,13 +74,8 @@
         </div>
         <div class="card-title text-primary-emphasis">
           <div class="card-body">
-            <!--Mission Statment-->
-           <div class="card-text">
-            Allow us to introduce ourselves, my name is Erica and my partner is Jolly Joe. We are currently located in Northern California but are more than willing to travel.
-           </div> 
-          </div>
-          <div class="card-footer pt-3">
-            In between dog walks/cat cuddles, Joe fills his days studying computer programming in order to pursue a career in the technology field and Erica works from home as an Independent Contractor for a virtual contact temp agency.
+<!--Mission Statment-->
+            Mission Statment
           </div>
         </div>  
       </div>        
